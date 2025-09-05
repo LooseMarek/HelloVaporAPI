@@ -38,4 +38,6 @@ func routes(_ app: Application) throws {
         let id = req.parameters.get("id")!
         return ""
     }
+    
+    try app.register(collection: SongController())
 }
